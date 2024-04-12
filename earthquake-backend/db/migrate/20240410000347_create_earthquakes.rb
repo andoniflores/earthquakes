@@ -1,6 +1,7 @@
 class CreateEarthquakes < ActiveRecord::Migration[7.1]
   def change
     create_table :earthquakes do |t|
+      t.string: :id, primary_key: true
       t.float :mag
       t.string :place
       t.integer :time

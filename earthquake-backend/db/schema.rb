@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_10_000347) do
-  create_table "earthquakes", force: :cascade do |t|
+ActiveRecord::Schema[7.1].define(version: 2024_04_12_000932) do
+  create_table "earthquakes", id: :string, force: :cascade do |t|
     t.float "mag"
     t.string "place"
     t.integer "time"

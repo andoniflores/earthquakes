@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :earthquakes
+  resources :earthquakes, param: :id
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   get '/earthquakes', to: 'earthquakes#index'
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
